@@ -1,0 +1,29 @@
+package:
+  id: qtmpris
+  name: qtmpris
+  version: 0.1.0.1
+  kind: lib
+  description: |
+    qtmpris
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+depends:
+- id: qtdbusextended
+  version: 0.0.3
+- id: qtdeclarative
+  version: 5.11.3
+- id: qtbase
+  version: 5.11.3.15
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/qtmpris.git
+  version: uos
+  commit: 72d3d0e96ec6698466cc7993cc71b9ab612e2098
+
+  patch: []
+build:
+  kind: qmake
